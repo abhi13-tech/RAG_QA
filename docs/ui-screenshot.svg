@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e3f2fd"/>
+      <stop offset="100%" stop-color="#f1f8e9"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="700" fill="url(#g)"/>
+  <rect x="40" y="40" width="1120" height="620" rx="8" ry="8" fill="#ffffff" stroke="#cfd8dc"/>
+  <rect x="60" y="80" width="300" height="560" rx="6" ry="6" fill="#f7f7f7" stroke="#e0e0e0"/>
+  <text x="80" y="120" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#263238">RAG Q&A — Streamlit UI</text>
+  <text x="80" y="160" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#455a64">Sidebar actions: Ingest • Index • Search • Answer</text>
+  <rect x="420" y="120" width="700" height="80" rx="6" ry="6" fill="#fafafa" stroke="#e0e0e0"/>
+  <text x="440" y="168" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#546e7a">Ask a question...</text>
+  <rect x="420" y="220" width="700" height="150" rx="6" ry="6" fill="#f9fbe7" stroke="#dce775"/>
+  <text x="440" y="260" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#33691e">Answer</text>
+  <text x="440" y="290" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#558b2f">Context‑grounded response appears here…</text>
+  <rect x="420" y="390" width="700" height="230" rx="6" ry="6" fill="#fff3e0" stroke="#ffcc80"/>
+  <text x="440" y="430" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#e65100">Contexts</text>
+  <text x="440" y="460" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#ef6c00">Top‑k retrieved chunks with sources…</text>
+  <text x="60" y="670" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#90a4ae">Placeholder image. Replace with a real screenshot or GIF.</text>
+</svg>

@@ -1,0 +1,15 @@
+{"question": "What is FastAPI?", "answer": "a modern, fast web framework for building APIs with Python", "must_contain": "FastAPI is a modern, fast (high-performance), web framework"}
+{"question": "Name two Kubernetes abstractions.", "answer": "Pods and Services", "must_contain": "Pods, Services"}
+{"question": "What does RAG combine?", "answer": "information retrieval with text generation", "must_contain": "Retrieval-augmented generation (RAG) combines information retrieval with text generation"}
+{"question": "Why does RAG improve factuality?", "answer": "feeds retrieved documents into a language model", "must_contain": "feeds them into a language model to improve factuality"}
+{"question": "What does Kubernetes automate?", "answer": "deployment, scaling, and management of containerized applications", "must_contain": "automating deployment, scaling, and management of containerized applications"}
+{"question": "Which language is FastAPI built for?", "answer": "Python", "must_contain": "APIs with Python"}
+{"question": "List three Kubernetes components mentioned.", "answer": "Pods, Services, Deployments", "must_contain": "Pods, Services, and Deployments"}
+{"question": "What does RAG retrieve?", "answer": "relevant documents from a knowledge base", "must_contain": "retrieves relevant documents from a knowledge base"}
+{"question": "What enables FastAPI validation?", "answer": "Pydantic models and type hints", "must_contain": "type hints and Pydantic models"}
+{"question": "What does Kubernetes orchestrate?", "answer": "containers across a cluster", "must_contain": "orchestrate containers across a cluster"}
+{"question": "What improves RAG factuality?", "answer": "conditioning the LLM on retrieved context", "must_contain": "feeds them into a language model to improve factuality"}
+{"question": "What kind of framework is FastAPI?", "answer": "web framework for building APIs", "must_contain": "web framework for building APIs"}
+{"question": "Kubernetes is open-source for what?", "answer": "automating deployment, scaling, and management", "must_contain": "automating deployment, scaling, and management"}
+{"question": "What two techniques does hybrid retrieval combine?", "answer": "dense vector search and BM25/TF-IDF", "must_contain": "Retrieval-augmented generation (RAG) combines information retrieval"}
+{"question": "What lets FastAPI auto-generate docs?", "answer": "Pydantic models and type hints", "must_contain": "type hints and Pydantic models"}
