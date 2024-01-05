@@ -30,3 +30,4 @@
 - 2024-02-26 14:55:40 Updated notes on retrieval pipeline
 - 2024-02-29 09:30:01 Updated notes on retrieval pipeline
 - 2024-01-01 14:13:30 Updated notes on retrieval pipeline
+- 2024-01-05 09:41:07 Updated notes on retrieval pipeline
