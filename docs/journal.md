@@ -54,3 +54,4 @@
 - 2024-02-14 14:08:20 Updated notes on retrieval pipeline
 - 2024-02-15 17:17:16 Updated notes on retrieval pipeline
 - 2024-02-15 17:35:34 Updated notes on retrieval pipeline
+- 2024-02-16 17:04:03 Updated notes on retrieval pipeline
