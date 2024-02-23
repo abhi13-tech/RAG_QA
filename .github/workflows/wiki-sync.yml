@@ -1,0 +1,53 @@
+name: Wiki Sync
+
+on:
+  push:
+    paths:
+      - 'docs/wiki/**'
+  workflow_dispatch:
+    inputs:
+      commit_date:
+        description: 'Optional commit date (e.g., 2024-02-23 10:10:00 -0500)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      COMMIT_DATE: ${{ inputs.commit_date }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync docs/wiki to GitHub Wiki
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -d docs/wiki ]; then
+            echo "docs/wiki not found; nothing to sync" >&2
+            exit 0
+          fi
+          WIKI_URL="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git"
+          git clone "$WIKI_URL" wiki
+          cp -f docs/wiki/*.md wiki/
+          cd wiki
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No wiki changes to commit"
+            exit 0
+          fi
+          if [ -n "${COMMIT_DATE:-}" ]; then
+            GIT_AUTHOR_DATE="$COMMIT_DATE" GIT_COMMITTER_DATE="$COMMIT_DATE" git add .
+            GIT_AUTHOR_DATE="$COMMIT_DATE" GIT_COMMITTER_DATE="$COMMIT_DATE" git commit -m "wiki: sync from docs/wiki"
+          else
+            git add .
+            git commit -m "wiki: sync from docs/wiki"
+          fi
+          # Try pushing to default wiki branch
+          git push origin HEAD:master || git push origin HEAD:main
+
