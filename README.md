@@ -7,6 +7,7 @@ Badges
 - ![CI](https://img.shields.io/badge/CI-passing-brightgreen)
 - ![Coverage](https://img.shields.io/badge/coverage-~80%25-blue)
 - ![License](https://img.shields.io/badge/license-MIT-informational)
+ - [![Wiki](https://img.shields.io/badge/Wiki-Published-4C1?logo=gitbook)](https://github.com/abhi13-tech/RAG_QA/wiki)
 
 Highlights
 - Hybrid retrieval: dense (sentence‑transformers) + BM25/TF‑IDF via Reciprocal Rank Fusion (RRF).
@@ -108,8 +109,8 @@ Notes
 - Security: keep secrets in environment variables or a local `.env` file.
  
  Wiki
- - See docs/wiki for detailed guides (Architecture, Quickstart, Config, API, Retrieval, Evaluations, UI, Troubleshooting, Roadmap, FAQ).
- - To publish on GitHub Wiki later, copy pages to the repo’s wiki:
-   - git clone https://github.com/<you>/<repo>.wiki.git
-   - cp -R docs/wiki/* <repo>.wiki/
-   - cd <repo>.wiki && git add . && git commit -m "Add wiki" && git push
+ - Published: https://github.com/abhi13-tech/RAG_QA/wiki
+ - Source: `docs/wiki` (keep content here; publish via the sync script below)
+ - Publish script:
+   - `./tools/sync_wiki.sh` (requires `origin` remote to be set)
+   - Optionally backdate: `COMMIT_DATE="2024-02-23 10:10:00 -0500" ./tools/sync_wiki.sh`
