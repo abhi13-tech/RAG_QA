@@ -106,3 +106,10 @@ Roadmap
 Notes
 - Offline friendly: if models can’t be downloaded, embeddings and reranker gracefully fall back to local heuristics.
 - Security: keep secrets in environment variables or a local `.env` file.
+ 
+ Wiki
+ - See docs/wiki for detailed guides (Architecture, Quickstart, Config, API, Retrieval, Evaluations, UI, Troubleshooting, Roadmap, FAQ).
+ - To publish on GitHub Wiki later, copy pages to the repo’s wiki:
+   - git clone https://github.com/<you>/<repo>.wiki.git
+   - cp -R docs/wiki/* <repo>.wiki/
+   - cd <repo>.wiki && git add . && git commit -m "Add wiki" && git push
