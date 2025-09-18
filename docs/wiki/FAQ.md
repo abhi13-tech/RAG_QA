@@ -12,3 +12,4 @@ How do I switch LLMs?
 How do I add my own docs?
 - Drop files into data/raw/ and run make ingest index.
 
+\n- Synced via CI at 2025-09-18T16:12:36Z
